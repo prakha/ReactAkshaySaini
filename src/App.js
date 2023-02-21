@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
-import { Profile } from "./components/Profile";
+import ProfileClass from "./components/ProfileClass";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import  RestaurantMenu  from "./components/RestaurantMenu";
 /* My Food App structure will look like this, 
@@ -55,7 +55,7 @@ const appRoutes = createBrowserRouter([
         children: [
           {
             path: "profile",
-            element: <Profile/>
+            element: <ProfileClass/>
           }
         ]
       },
